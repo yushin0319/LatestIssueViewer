@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LatestIssueViewer</string>
+    <string name="search_hint">書籍名を検索</string>
+    <string name="search_button">検索</string>
+</resources>

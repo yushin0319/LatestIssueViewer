@@ -1,0 +1,36 @@
+[versions]
+agp = "8.9.1"
+glide = "4.16.0"
+gson = "2.10.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.8.0"
+constraintlayout = "2.2.1"
+okhttp = "4.12.0"
+realmAndroidLibrary = "10.19.0"
+realmAndroidLibraryVersion = "10.15.1"
+books = "1.0.0"
+
+[libraries]
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+realm-android-library = { module = "io.realm:realm-android-library", version.ref = "realmAndroidLibrary" }
+realm-android-library-v10151 = { module = "io.realm:realm-android-library", version.ref = "realmAndroidLibraryVersion" }
+realm-gradle-plugin = { module = "io.realm:realm-gradle-plugin", version.ref = "realmAndroidLibraryVersion" }
+books = { group = "com.google.android.mediahome", name = "books", version.ref = "books" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

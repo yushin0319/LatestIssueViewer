@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LatestIssueViewer</string>
+    <string name="description">お気に入り作者の新刊を見つけよう！</string>
+    <string name="search_hint">まずは本のタイトルを</string>
+    <string name="search_button">検索</string>
+    <string name="show_upcoming_button">新刊リストを表示</string>
+    <string name="explanation">検索結果でお気に入りにした本の作者の新刊が\n自動的に新刊リストに追加されます</string>
+    <string name="book_title">タイトル</string>
+    <string name="book_image">表紙画像</string>
+    <string name="book_author">著者名</string>
+    <string name="book_sales_date">発売日</string>
+    <string name="book_fav">お気に入り帯</string>
+    <string name="notify_top">新刊発売（</string>
+    <string name="notify_bottom">）日前に通知します</string>
+</resources>
