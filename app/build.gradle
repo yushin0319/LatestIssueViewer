@@ -1,0 +1,63 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+apply plugin: 'realm-android'
+
+def RAKUTEN_APP_ID = project.hasProperty("RAKUTEN_APP_ID") ? project.RAKUTEN_APP_ID : ""
+
+android {
+    namespace 'com.example.latestissueviewer'
+    compileSdk 35
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    defaultConfig {
+        applicationId "com.example.latestissueviewer"
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "RAKUTEN_APP_ID", "\"${RAKUTEN_APP_ID}\""
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+
+    // Realm Java（最新版は公式で確認してね）
+    implementation libs.realm.android.library // 例：10.x系（MongoDB Realm SDK）
+
+// Glide（画像読み込み）
+    implementation libs.glide
+    implementation libs.books
+    annotationProcessor libs.realm.android.library
+
+// Gson（JSON解析）
+    implementation libs.gson
+
+    implementation libs.okhttp
+
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}
