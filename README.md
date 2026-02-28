@@ -4,9 +4,16 @@
 お気に入り登録・新刊通知などの機能があります。
 
 ## 技術スタック
-- Java（Android）
+- Java / Kotlin（Android）
 - Realm
+- OkHttp
+- Gson
+- Glide
 - 楽天ブックスAPI
+
+## セットアップ
+1. `gradle.properties` に `RAKUTEN_APP_ID=your_api_key` を設定
+2. Android Studio でプロジェクトを開いてビルド
 
 ## 主な機能
 - 本の検索
